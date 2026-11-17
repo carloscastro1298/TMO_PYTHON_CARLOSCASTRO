@@ -25,31 +25,3 @@ Asegúrate de tener instalado **Python 3.8 o superior**. Luego, instala las depe
 
 ```bash
 pip install pandas openpyxl google-genai
-
-# 📊 BPO Decision Making Automation
-
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
-![Gemini AI](https://img.shields.io/badge/Google%20Gemini-2.5%20Flash-8E75B2?logo=google&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active-success)
-
-> Automated Python system for processing, classifying, AI-analyzing, and reporting BPO operations (replacement for n8n workflows).
-
----
-
-## 🚀 Key Features
-
-* **📥 Excel Processing:** Reads and cleans data from source Excel files (`.xlsx`).
-* **🏷️ Smart Classification:** Automatically categorizes decisions by type, risk level, handling quality, criticality, and AHT (Average Handle Time / TMO) status.
-* **🤖 AI Analysis (Google Gemini):** Uses the `gemini-2.5-flash` model to generate concise recommendations and explanations tailored to critical and non-critical cases.
-* **📑 Report Generation:** Automatically exports separate Excel reports (`Critical_Cases_Report.xlsx`, `Non_Critical_Cases_Report.xlsx`, `BPO_Complete_Analysis.xlsx`).
-* **📧 Email Notifications:** Sends automated emails with HTML summaries and/or Excel report attachments via Gmail's SMTP server.
-
----
-
-## 🛠️ Requirements & Installation
-
-Make sure you have **Python 3.8 or higher** installed. Then, install the required dependencies by running the following command in your terminal:
-
-```bash
-pip install pandas openpyxl google-genai
