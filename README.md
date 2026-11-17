@@ -19,9 +19,15 @@
 
 ---
 
-## 🛠️ Requisitos e Instalación
+##📦 Estructura del Proyecto
+├── bpo_decision_making_comentado.py  # Script principal de lectura, clasificación y análisis IA
+├── config_email_comentado.py         # Script especializado para el envío masivo de reportes por correo
+├── reports/                          # Carpeta donde se guardan automáticamente los reportes generados
+└── README.md                         # Documentación del proyecto
 
-Asegúrate de tener instalado **Python 3.8 o superior**. Luego, instala las dependencias necesarias ejecutando el siguiente comando en tu terminal:
+##💻 Instrucciones de Uso
+1. Ejecutar el análisis principal y exportación de Excel
+Ejecuta el script principal pasando como argumento la ruta de tu archivo de datos en Excel:
+python bpo_decision_making_comentado.py "BPO_Decision_Making_Expanded.xlsx"
 
-```bash
-pip install pandas openpyxl google-genai
+Si deseas que también envíe los reportes en formato HTML por correo de manera integrada, agrega la bandera --send-email:
